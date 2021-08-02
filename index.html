@@ -2,34 +2,26 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>07 - Introdução | DOM - createElement</title>
+    <title>08 - Introdução | DOM - appendChild</title>
 
 </head>
 
 <body>
     
-<div id="div1">DIV 1</div>
-<div class="div2">DIV 2</div>
-<ul>
-    <li>1º Item</li>
-    <li>2º Item</li>
-    <li>3º Item</li>
-</ul>
+<div id="mensagem">
 
+
+</div>
 
 <script>
 
-console.log(
-        document.createElement("div")
-        )
-
     var p = document.createElement("p");
-        p.innerHTML = "olá, vamos estudar JavaScript?";
-        p.classList.add("classe1")
-
-    console.log(
-            p
-        )
+    var p1 = document.createElement("p");
+    var idMensagem = document.getElementById("mensagem");
+    p.innerHTML = "olá, vamos estudar JavaScript?";
+    p1.innerHTML = "oi, eu sou o segundo elemento";
+    idMensagem.appendChild(p);
+    document.getElementById("mensagem").appendChild(p1);
     
 </script>
 
