@@ -2,20 +2,22 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>04 - Introdução | DOM - getElementsByClassName</title>
+    <title>05 - Introdução | DOM - getElementsByTagName</title>
 
 </head>
 
 <body>
     
-<div class="classe1">Classe 1</div>
-<div class="classe1">Classe 1 clone</div>
-<div class="classe2">Classe 2</div>
+<div>DIV 1</div>
+<p>Paragrafo</p>
+<footer>Footer</footer>
+<div>DIV 2</div>
 
 <script>
-    console.log(document.getElementsByClassName("classe1"))
-    console.log(document.getElementsByClassName("classe1")[0])
-    console.log(document.getElementsByClassName("classe1")[1])
+    console.log(document.getElementsByTagName("div"))
+    console.log(document.getElementsByTagName("div")[0])
+    console.log(document.getElementsByTagName("p"))
+    console.log(document.getElementsByTagName("p")[0])
 </script>
 
 </body>
