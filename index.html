@@ -2,22 +2,46 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>05 - Introdução | DOM - getElementsByTagName</title>
+    <title>06 - Introdução | DOM - querySelector/querySelectorAll</title>
 
 </head>
 
 <body>
     
-<div>DIV 1</div>
-<p>Paragrafo</p>
-<footer>Footer</footer>
-<div>DIV 2</div>
+<div id="div1">DIV 1</div>
+<div class="div2">DIV 2</div>
+<ul>
+    <li>1º Item</li>
+    <li>2º Item</li>
+    <li>3º Item</li>
+</ul>
+
 
 <script>
-    console.log(document.getElementsByTagName("div"))
-    console.log(document.getElementsByTagName("div")[0])
-    console.log(document.getElementsByTagName("p"))
-    console.log(document.getElementsByTagName("p")[0])
+    console.log(
+        document.querySelector("#div1")
+        )
+    console.log(
+        document.querySelector(".div2")
+        )
+    console.log(
+        document.querySelector("ul")
+        )
+    console.log(
+        document.querySelector("ul li")
+        )
+    console.log(
+        document.querySelectorAll("ul li")
+        )
+    console.log(
+        document.querySelectorAll("ul li")[2]
+        )
+    console.log(
+        document.querySelectorAll("ul li:nth-child(3)")
+        )
+    console.log(
+        document.querySelector("ul li:nth-child(3)")
+        )    
 </script>
 
 </body>
