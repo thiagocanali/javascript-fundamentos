@@ -2,17 +2,20 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>03 - Introdução | DOM - getElementByID</title>
+    <title>04 - Introdução | DOM - getElementsByClassName</title>
 
 </head>
 
 <body>
     
-<div id="div1">DIV1</div>
-<div id="div2">DIV2</div>
+<div class="classe1">Classe 1</div>
+<div class="classe1">Classe 1 clone</div>
+<div class="classe2">Classe 2</div>
 
 <script>
-    console.log(document.getElementById("div2").innerHTML = "Eae, bora estudar js?")
+    console.log(document.getElementsByClassName("classe1"))
+    console.log(document.getElementsByClassName("classe1")[0])
+    console.log(document.getElementsByClassName("classe1")[1])
 </script>
 
 </body>
